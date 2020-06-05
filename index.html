@@ -21,14 +21,14 @@
       <h1>Nia's Todo List</h1>
     </header>
 
-    <form>
+    <form class="js-toDoForm">
       <input type="text" class="js-toDoInput" />
       <button class="js-toDoBtn" type="submit">
         <i class="fas fa-plus-square"></i>
       </button>
 
       <div class="select">
-        <select name="todos" id="filterToDo">
+        <select name="todos" class="filterToDo">
           <option value="all">All</option>
           <option value="checked">Checked</option>
           <option value="unchecked">Unchecked</option>
@@ -36,7 +36,7 @@
       </div>
     </form>
 
-    <div class="toDoContainer">
+    <div class="js-toDoContainer">
       <ul class="js-toDoList"></ul>
     </div>
 
