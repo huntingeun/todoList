@@ -12,8 +12,8 @@ function removeLocalToDos(todo) {
     toDos = JSON.parse(loadToDo);
   }
   const toDoText = todo.children[0].innerText;
-  toDos.splice(toDos.indexOf(toDoText), 1);
-  localStorage.setItem("toDos", JSON.stringify(toDos));
+  toDos.splice(toDos.indexOf(toDoText), 1); //지웠으면
+  localStorage.setItem("toDos", JSON.stringify(toDos)); //다시 세팅해줘야
 }
 
 function saveToDo(todo) {
